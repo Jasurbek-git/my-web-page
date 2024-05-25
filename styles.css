@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Общие стили */
 body {
     font-family: 'Arial', sans-serif;
@@ -152,3 +153,159 @@ footer .social-links a:hover {
     opacity: 1;
     transform: translateY(0);
 }
+=======
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    color: #333;
+    animation: colorChange 3s infinite alternate;
+}
+
+@keyframes colorChange {
+    from {
+        color: #333;
+    }
+    to {
+        color: #007bff;
+    }
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #555;
+    font-size: 1.8em;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+section p {
+    line-height: 1.8;
+    color: #666;
+    margin: 0;
+    padding: 0;
+}
+
+.contact a {
+    display: block;
+    margin: 10px 0;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer .social-links a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #007bff;
+    transform: scale(1.1);
+}
+
+/* Анимационные стили */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animated {
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+}
+
+.fadeInDown {
+    transform: translateY(-20px);
+}
+
+.fadeInUp {
+    transform: translateY(20px);
+}
+
+.fadeIn {
+    transform: translateY(0);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+>>>>>>> 47121ade1232fcf77a391b343b6c7dbb18e2c95c
